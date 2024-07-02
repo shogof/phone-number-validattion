@@ -28,8 +28,9 @@ body {
 }
 
 #logo-image {
-  width: 40px;
-  margin-left: 40px;
+  width: 120px;
+  height: 65px;
+  margin-left: 0;
 }
 
 .menu {
@@ -118,7 +119,7 @@ body {
   padding: 50px 0;
 }
 
-.container h1 {
+.container h1, .se-section h2 {
   font-size: 32px;
   line-height: 44px;
   font-weight: 800;
@@ -127,7 +128,7 @@ body {
   margin: 0 auto;
 }
 
-.container p {
+.container p, .se-section p{
   color: #6e7191;
   margin: 15px auto 28px;
   line-height: 24px;
@@ -214,6 +215,32 @@ body {
   color: white;
   background-color: rgb(169, 208, 252);
   font-size: 17.5px;
+}
+
+.se-section {
+  width: 100%;
+  height: auto;
+  text-align: center;
+  padding: 50px 0;
+}
+
+iframe {
+  width: 89%;
+  height: 200px;
+}
+
+.information {
+  text-align: left;
+  padding: 10px 20px;
+}
+
+.information li {
+  margin-left: 2.1rem;
+  margin-top: 20px;
+}
+
+.information li span {
+  font-weight: bold;
 }
 
 @media (max-width: 610px) {
