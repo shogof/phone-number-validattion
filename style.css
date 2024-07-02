@@ -6,8 +6,8 @@
 
 body {
   font-family: "poppins", sans-serif;
-  --color1: #fff;
-  --color2: #181818;
+  --color2: #fff;
+  --color1: #181818;
 }
 
 .navBar {
@@ -19,14 +19,17 @@ body {
   position: relative;
   background-color: var(--color2);
   padding: 12px 20px;
+  box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.1);
 }
 
 #logo-image {
   width: 40px;
+  margin-left: 40px;
 }
 
 .menu {
   display: flex;
+  margin-right: 50px;
 }
 
 .menu li {
@@ -49,33 +52,103 @@ body {
   bottom: 0;
   left: 0;
   width: 0;
-  height: 1px;
+  height: 2px;
   background-color: var(--color1);
-  transition: 0.15s ease-in-out;
+  transition: 0.53s ease-in-out;
 }
 
-.menu li a:hover:after {width: 100%;}
+.menu li a:hover:after {
+  width: 100%;
+  background-color: rgb(84, 162, 252);
+}
 
-.open, .close {
-    position: absolute;
-    color: var(--color1);
-    cursor: pointer;
-    font-size: 1.5rem;
-    display: none;
+.btn {
+  padding: 10px 15px;
+  display: flex;
+}
+
+.btn a {
+  padding: 12px 25px;
+  border: 1px solid rgb(84, 162, 252);
+  margin: 10px;
+  color: rgb(84, 162, 252);
+  text-decoration: none;
+  border-radius: 5px;
+  font-weight: bold;
+}
+
+.open,
+.close {
+  position: absolute;
+  color: var(--color1);
+  cursor: pointer;
+  font-size: 1.5rem;
+  display: none;
 }
 
 .open {
-    top: 50%;
-    right: 20px;
-    transform: translateY(-50%);
+  top: 50%;
+  right: 20px;
+  transform: translateY(-50%);
 }
 
 .close {
-    top: 20px;
-    right: 20px;
+  top: 20px;
+  right: 20px;
 }
 
 #check {
-    display: none;
+  display: none;
 }
 
+@media (max-width: 610px) {
+  .menu {
+    flex-direction: column;
+    align-items: center;
+    width: 70%;
+    height: 100vh;
+    position: fixed;
+    padding-top: 0;
+    top: 0;
+    margin-right: 0;
+    right: -100%;
+    z-index: 100;
+    transition: all 0.2s ease-in-out;
+    border-top-left-radius: 20px;
+    padding-top: 55px;
+    background-color: #f7f6f6;
+    box-shadow: 10px 10px 30px rgba(0, 0, 0, 0.1);
+  }
+
+  .menu li {
+    margin-top: 0;
+    border-top: 1px solid rgb(122, 116, 116);
+    width: 100%;
+  }
+
+  .menu li:hover {
+    background-color: rgb(84, 162, 252);
+  }
+
+  .menu li a {
+    padding: 20px;
+  }
+
+  .menu li a:hover:after {
+    width: 0;
+
+  }
+
+  .open,
+  .close {
+    display: block;
+  }
+
+  .btn {
+    margin-right: 20px;
+  }
+
+  #check:checked ~ .menu {
+    right: 0;
+  }
+}
