@@ -44,9 +44,9 @@ body {
 }
 
 .btn a {
-  padding: 12px 20px;
+  padding: 12px 15px;
   border: 1px solid rgb(84, 162, 252);
-  margin: 10px;
+  margin: 0px;
   color: rgb(84, 162, 252);
   text-decoration: none;
   border-radius: 5px;
@@ -120,7 +120,8 @@ body {
   padding: 100px 0 80px 0;
 }
 
-.container h1, .se-section h2 {
+.container h1,
+.se-section h2 {
   font-size: 32px;
   line-height: 44px;
   font-weight: 800;
@@ -129,7 +130,8 @@ body {
   margin: 0 auto;
 }
 
-.container p, .se-section p{
+.container p,
+.se-section p {
   color: #6e7191;
   margin: 15px auto 28px;
   line-height: 24px;
@@ -230,9 +232,16 @@ iframe {
   height: 200px;
 }
 
-.information, footer {
+.information,
+footer {
   text-align: left;
   padding: 10px 20px;
+}
+
+#vid {
+  text-decoration: none;
+  color: rgb(84, 162, 252);
+  font-size: 17px;
 }
 
 .information li {
@@ -250,19 +259,18 @@ footer {
   background-color: rgb(169, 208, 252);
 }
 
-footer a{
+footer a {
   margin: 10px;
   text-decoration: none;
   color: white;
-  margin-left:0 ;
+  margin-left: 0;
   transition: 0.7s ease-in-out;
 }
 
-footer a:hover{
+footer a:hover {
   color: rgb(84, 162, 252);
   font-size: 17px;
 }
-
 
 @media (max-width: 610px) {
   .menu {
@@ -315,5 +323,42 @@ footer a:hover{
 
   #check:checked ~ .menu {
     right: 0;
+  }
+}
+
+@media (min-width: 610px) {
+  #logo-image {
+    margin-left: 37px;
+  }
+
+  .btn a {
+    margin-right: 53px;
+  }
+
+  .f-section p {
+    height: 4rem;
+  }
+
+  .f-section label {
+    margin-left: 2.2rem;
+  }
+
+  #valid {
+    width: 30%;
+  }
+
+  iframe {
+    width: 87%;
+    height: 400px;
+  }
+
+  .container h1,
+  .se-section h2 {
+    font-size: 40px;
+  }
+
+  .information,
+  footer {
+    padding: 10px 82px;
   }
 }
