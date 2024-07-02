@@ -36,6 +36,17 @@ body {
   padding-left: 30px;
 }
 
+.btn a {
+  padding: 12px 25px;
+  border: 1px solid rgb(84, 162, 252);
+  margin: 10px;
+  color: rgb(84, 162, 252);
+  text-decoration: none;
+  border-radius: 5px;
+  font-weight: bold;
+  transition: 0.5s ease-in-out;
+}
+
 .menu li a {
   display: inline-block;
   text-decoration: none;
@@ -62,19 +73,9 @@ body {
   background-color: rgb(84, 162, 252);
 }
 
-.btn {
-  padding: 10px 15px;
-  display: flex;
-}
-
-.btn a {
-  padding: 12px 25px;
-  border: 1px solid rgb(84, 162, 252);
-  margin: 10px;
-  color: rgb(84, 162, 252);
-  text-decoration: none;
-  border-radius: 5px;
-  font-weight: bold;
+.btn a:hover {
+  background-color: rgb(84, 162, 252);
+  color: #fff;
 }
 
 .open,
@@ -108,7 +109,6 @@ body {
     width: 70%;
     height: 100vh;
     position: fixed;
-    padding-top: 0;
     top: 0;
     margin-right: 0;
     right: -100%;
@@ -136,7 +136,6 @@ body {
 
   .menu li a:hover:after {
     width: 0;
-
   }
 
   .open,
@@ -145,7 +144,11 @@ body {
   }
 
   .btn {
-    margin-right: 20px;
+    margin-right: 35px;
+  }
+
+  .btn a {
+    padding: 10px 15px;
   }
 
   #check:checked ~ .menu {
