@@ -110,12 +110,12 @@ body {
 
 .container {
   width: 100%;
-  height: 650px;
+  height: auto;
   background-image: url(images/istockphoto-1139678803-612x612.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   text-align: center;
-  padding-top: 50px;
+  padding: 50px 0;
 }
 
 .container h1 {
@@ -138,12 +138,11 @@ body {
   background-color: #fff;
   width: 87%;
   border-radius: 10px;
-  height: 20rem;
+  height: auto;
   margin: 45px auto 0 auto;
   display: flex;
   flex-direction: column;
   padding: 10px;
-  text-align: center;
 }
 
 .f-section p {
@@ -157,7 +156,8 @@ body {
   font-weight: 400;
 }
 
-.f-section #num, #select-area {
+.f-section #num,
+#select-area {
   width: 93.5%;
   height: 3rem;
   margin: 5px auto 1.5rem auto;
@@ -167,10 +167,53 @@ body {
   outline: none;
 }
 
-.f-section label{
+.f-section label {
   text-align: left;
   margin-left: 1rem;
   font-size: 17px;
+}
+
+.f-section ul {
+  margin: 5px auto;
+  width: 93.5%;
+  padding: 2px 0;
+}
+
+#valid {
+  height: 2rem;
+  background-color: rgb(169, 208, 252);
+  color: white;
+  border: none;
+  border-radius: 4px;
+  height: 40px;
+  width: 50%;
+  float: left;
+  font-size: 17px;
+  transition: 0.7s ease-in-out;
+}
+
+#reset {
+  border: none;
+  background-color: white;
+  font-size: 17px;
+  color: rgb(84, 162, 252);
+  padding: 10px 20px;
+  float: left;
+  margin-left: 10px;
+  transition: 0.5s ease-in-out;
+}
+
+#valid:hover {
+  background-color: #fff;
+  color: rgb(84, 162, 252);
+  border: 2px solid rgb(84, 162, 252);
+  font-size: 17.6px;
+}
+
+#reset:hover {
+  color: white;
+  background-color: rgb(169, 208, 252);
+  font-size: 17.5px;
 }
 
 @media (max-width: 610px) {
