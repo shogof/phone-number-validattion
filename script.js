@@ -17,6 +17,9 @@ function checkValidNumber(input) {
 
 checkBtn.addEventListener('click', () => {
   const input = userInput.value;
+  if (userInput === '') {
+    alert('Please provide a phone number');
+  }
   if (input.length === 0) {
     resultsDiv.style.color = '#af0f0f';
     resultsDiv.innerHTML = 'Please provide a phone number';
