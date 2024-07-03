@@ -12,6 +12,12 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+      integrity="sha512-..."
+      crossorigin="anonymous"
+    />
   </head>
   <body>
     <header id="header">
@@ -59,14 +65,16 @@
           <input type="text" id="num" /><br />
           <label for="select-area">Country</label>
           <select name="" id="select-area">
-            <option value="1">Afghanistan</option>
-            <option value="2">Iran</option>
+            <option value="1">
+              <i class="flag-icon flag-icon-af"></i>Afghanistan
+            </option>
+            <option value="2">
+              <i class="flag-icon flag-icon-ir"></i>Iran
+            </option>
             <option value="3">USA</option>
           </select>
           <ul>
-            <button id="valid">
-              Validate Number
-            </button>
+            <button id="valid">Validate Number</button>
             <button id="reset">Reset</button>
           </ul>
           <p id="para">This is a text</p>

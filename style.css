@@ -232,7 +232,11 @@ iframe {
   height: 200px;
 }
 
-.information,
+.information {
+  text-align: justify;
+  padding: 10px 20px;
+}
+
 footer {
   text-align: left;
   padding: 10px 20px;
@@ -274,7 +278,7 @@ footer a:hover {
 
 #para {
   height: 0.5rem;
-  padding-bottom:40px;
+  padding-bottom: 40px;
 }
 
 @media (max-width: 610px) {
@@ -351,8 +355,8 @@ footer a:hover {
   }
 
   .f-section #para {
-  margin-top: 5rem;
-  width: 50%;
+    margin-top: 5rem;
+    width: 50%;
   }
 
   .f-section #num,
@@ -367,6 +371,7 @@ footer a:hover {
 
   .f-section label {
     font-size: 17px;
+    margin-right: 15px;
   }
 
   #valid {
