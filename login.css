@@ -120,7 +120,6 @@ span:hover {
 #endP a {
   text-decoration: none;
   color: rgb(7, 122, 252);
-  
 }
 
 @media (min-width: 768px) {
@@ -129,7 +128,7 @@ span:hover {
     height: 100px;
     margin: 0 530px;
   }
-   .contaniner {
+  .contaniner {
     width: 28%;
   }
 }
