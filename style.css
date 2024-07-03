@@ -160,7 +160,7 @@ body {
   font-weight: 400;
 }
 
-.f-section #num,
+.f-section #user-input,
 #select-area {
   width: 93.5%;
   height: 3rem;
@@ -183,7 +183,7 @@ body {
   padding: 2px 0;
 }
 
-#valid {
+#check-btn {
   height: 2rem;
   background-color: rgb(169, 208, 252);
   color: white;
@@ -196,7 +196,7 @@ body {
   transition: 0.7s ease-in-out;
 }
 
-#reset {
+#clear-btn {
   border: none;
   background-color: white;
   font-size: 17px;
@@ -207,14 +207,14 @@ body {
   transition: 0.5s ease-in-out;
 }
 
-#valid:hover {
+#check-btn:hover {
   background-color: #fff;
   color: rgb(84, 162, 252);
   border: 2px solid rgb(84, 162, 252);
   font-size: 17.6px;
 }
 
-#reset:hover {
+#clear-btn:hover {
   color: white;
   background-color: rgb(169, 208, 252);
   font-size: 17.5px;
@@ -276,7 +276,7 @@ footer a:hover {
   font-size: 17px;
 }
 
-#para {
+#results-div {
   height: 0.5rem;
   padding-bottom: 40px;
 }
@@ -354,12 +354,12 @@ footer a:hover {
     width: 90%;
   }
 
-  .f-section #para {
+  .f-section #results-div {
     margin-top: 5rem;
     width: 50%;
   }
 
-  .f-section #num,
+  .f-section #user-input,
   #select-area {
     width: 30%;
     height: 3rem;
@@ -374,7 +374,7 @@ footer a:hover {
     margin-right: 15px;
   }
 
-  #valid {
+  #check-btn {
     width: 16%;
     margin-left: 24.1rem;
   }
