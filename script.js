@@ -3,27 +3,7 @@ const checkBtn = document.getElementById('check-btn');
 const clearBtn = document.getElementById('clear-btn');
 const resultsDiv = document.getElementById('results-div');
 
-checkBtn.addEventListener('click', () => {
-  const input = userInput.value;
-  if (input.length === 0) {
-    alert('Please provide a phone number');
-  } else {
-    checkValidNumber(input);
-    userInput.value = '';
-  }
-});
-
-userInput.addEventListener('keydown', (e) => {
-  if (e.key === 'Enter') {
-    checkValidNumber(userInput.value);
-    userInput.value = '';
-  }
-});
-
-clearBtn.addEventListener('click', () => {
-  resultsDiv.innerHTML = '';
-});
-
+// Function to handle checking and displaying validity
 function checkValidNumber(input) {
   const countryCode = '^(1\\s?)?';
   const areaCode = '(\\([0-9]{3}\\)|[0-9]{3})';
@@ -32,10 +12,35 @@ function checkValidNumber(input) {
   const phoneRegex = new RegExp(
     `${countryCode}${areaCode}${spacesDashes}${phoneNumber}`
   );
-  phoneRegex.test(input)
-    ? (resultsDiv.style.color = '#066637')
-    : (resultsDiv.style.color = '#af0f0f');
-  resultsDiv.innerHTML = `${
-    phoneRegex.test(input) ? 'Valid' : 'Invalid'
-  } US number: ${input}`;
+  const isValid = phoneRegex.test(input);
+  
+  // Update resultsDiv based on validity
+  resultsDiv.style.color = isValid ? '#066637' : '#af0f0f';
+  resultsDiv.innerHTML = `${isValid ? 'Valid' : 'Invalid'} US number: ${input}`;
 }
+
+// Event listener for checking on button click
+checkBtn.addEventListener('click', () => {
+  const input = userInput.value;
+  if (input.length === 0) {
+    resultsDiv.style.color = '#af0f0f'; // Update color for error message
+    resultsDiv.innerHTML = 'Please provide a phone number'; // Update error message
+  } else {
+    checkValidNumber(input); // Call function to check validity
+    userInput.value = ''; // Clear input after checking
+  }
+});
+
+// Event listener for checking on Enter key press
+userInput.addEventListener('keydown', (e) => {
+  if (e.key === 'Enter') {
+    const input = userInput.value;
+    checkValidNumber(input); // Call function to check validity
+    userInput.value = ''; // Clear input after checking
+  }
+});
+
+// Event listener to clear results
+clearBtn.addEventListener('click', () => {
+  resultsDiv.innerHTML = ''; // Clear resultsDiv
+});
