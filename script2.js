@@ -8,12 +8,12 @@ document.addEventListener('DOMContentLoaded', () => {
   checkBtn.addEventListener('click', () => {
     const phoneNumber = userInput.value.trim();
     if (phoneNumber === '') {
-      alert('Please provide a phone number');
+      resultsDiv.innerHTML = 'Please provide a phone number';
       return;
     }
 
     function validateUSPhoneNumber(phoneNumber) {
-      const regex = /^(1\s?)?(\d{3}|\(\d{3}\))[\-\s]?\d{3}[\-\s]?\d{4}$/;
+      const regex = /^(1\s?)?(\d{3}|\(\d{3}\))[-\s]?\d{3}[-\s]?\d{4}$/;
       return regex.test(phoneNumber);
     }
 
