@@ -1,19 +1,19 @@
-document.addEventListener("DOMContentLoaded", function () {
-  const userInput = document.getElementById("user-input");
-  const checkBtn = document.getElementById("check-btn");
-  const clearBtn = document.getElementById("clear-btn");
-  const resultsDiv = document.getElementById("results-div");
+document.addEventListener('DOMContentLoaded', () => {
+  const userInput = document.getElementById('user-input');
+  const checkBtn = document.getElementById('check-btn');
+  const clearBtn = document.getElementById('clear-btn');
+  const resultsDiv = document.getElementById('results-div');
 
-  const selectedOption = document.getElementById("select-area");
-  checkBtn.addEventListener("click", function () {
+  const selectedOption = document.getElementById('select-area');
+  checkBtn.addEventListener('click', () => {
     const phoneNumber = userInput.value.trim();
-    if (phoneNumber === "") {
-      alert("Please provide a phone number");
+    if (phoneNumber === '') {
+      alert('Please provide a phone number');
       return;
     }
 
     function validateUSPhoneNumber(phoneNumber) {
-      const regex = /^(1-?)?(\([2-9]\d{2}\)|[2-9]\d{2})[- )]?\d{3}[- ]?\d{4}$/;
+      const regex = /^(1\s?)?(\d{3}|\(\d{3}\))[\-\s]?\d{3}[\-\s]?\d{4}$/;
       return regex.test(phoneNumber);
     }
 
@@ -53,7 +53,7 @@ document.addEventListener("DOMContentLoaded", function () {
     }
   });
 
-  clearBtn.addEventListener("click", function () {
-    resultsDiv.textContent = "";
+  clearBtn.addEventListener('click', () => {
+    resultsDiv.textContent = '';
   });
 });
