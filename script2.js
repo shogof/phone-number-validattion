@@ -13,35 +13,35 @@ function validateAFPhoneNumber(phoneNumber) {
   return regex.test(phoneNumber);
 }
 
-document.addEventListener("DOMContentLoaded", () => {
-  const userInput = document.getElementById("user-input");
-  const checkBtn = document.getElementById("check-btn");
-  const clearBtn = document.getElementById("clear-btn");
-  const resultsDiv = document.getElementById("results-div");
-  const selectedOption = document.getElementById("select-area");
+document.addEventListener('DOMContentLoaded', () => {
+  const userInput = document.getElementById('user-input');
+  const checkBtn = document.getElementById('check-btn');
+  const clearBtn = document.getElementById('clear-btn');
+  const resultsDiv = document.getElementById('results-div');
+  const selectedOption = document.getElementById('select-area');
 
-  checkBtn.addEventListener("click", () => {
+  checkBtn.addEventListener('click', () => {
     const phoneNumber = userInput.value.trim();
 
-    if (phoneNumber === "") {
-      resultsDiv.textContent = "Please provide a phone number";
+    if (phoneNumber === '') {
+      resultsDiv.textContent = 'Please provide a phone number';
       return;
     }
 
     let isValid;
-    let country = "";
+    let country = '';
     switch (selectedOption.selectedIndex) {
       case 2:
         isValid = validateUSPhoneNumber(phoneNumber);
-        country = "US";
+        country = 'US';
         break;
       case 0:
         isValid = validateAFPhoneNumber(phoneNumber);
-        country = "Afghanistan";
+        country = 'Afghanistan';
         break;
       default:
         isValid = validateIranPhoneNumber(phoneNumber);
-        country = "Iran";
+        country = 'Iran';
     }
 
     if (isValid) {
@@ -51,8 +51,8 @@ document.addEventListener("DOMContentLoaded", () => {
     }
   });
 
-  clearBtn.addEventListener("click", () => {
-    userInput.value = "";
-    resultsDiv.textContent = "";
+  clearBtn.addEventListener('click', () => {
+    userInput.value = '';
+    resultsDiv.textContent = '';
   });
 });
