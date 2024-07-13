@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+      integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+      integrity="sha512-..."
+      crossorigin="anonymous"
+    />
+  </head>
+  <body>
+    <header id="header">
+      <nav>
+        <ul class="navBar">
+          <li>
+            <a href="index.html"
+              ><img
+                src="images/Screenshot_2024-07-02_232552-removebg-preview.png"
+                alt=""
+                id="logo-image"
+            /></a>
+          </li>
+
+          <input type="checkbox" id="check" />
+
+          <span class="menu">
+            <li><a href="#header" id="first">Home</a></li>
+            <li><a href="#v">Video</a></li>
+            <li><a href="#info">Information</a></li>
+            <li><a href="#contact">Contact</a></li>
+            <li><a href="#help">Help</a></li>
+            <label for="check" class="close"
+              ><i class="fas fa-times"></i
+            ></label>
+          </span>
+          <li class="btn"><a href="login.html">Log in</a></li>
+          <label for="check" class="open"><i class="fas fa-bars"></i></label>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <div class="container">
+        <h1>Phone number validation tool</h1>
+        <p>
+          Perform phone number verification and validation requests with our
+          validation tool.
+        </p>
+        <div class="f-section">
+          <p>
+            Please ensure that your input contains no spaces or letters, as they
+            will render the entry invalid. <br />
+          </p>
+          <label for="user-input" id="numm">Number</label>
+          <input type="text" id="user-input" /><br />
+          <label for="select-area">Country</label>
+          <select name="" id="select-area">
+            <option value="1">
+              <i class="flag-icon flag-icon-af"></i>Afghanistan
+            </option>
+            <option value="2">
+              <i class="flag-icon flag-icon-ir"></i>Iran
+            </option>
+            <option value="3">USA</option>
+          </select>
+          <ul>
+            <button id="check-btn">Validate Number</button>
+            <button id="clear-btn">Reset</button>
+          </ul>
+          <p id="results-div">Good Luck</p>
+        </div>
+      </div>
+      <div class="se-section">
+        <h2 id="v">Phone Number Info video</h2>
+        <p>
+          Watch our<a href="https://youtu.be/rpWWA4cnziQ" id="vid"> video </a
+          >tutorials to learn more about Phone Numbers Validations.
+        </p>
+        <iframe
+          width="670"
+          height="377"
+          src="https://www.youtube.com/embed/rpWWA4cnziQ"
+          title="How to Tell if Phone is Cell or Landline. Phone Validator, the Ultimate Bulk Phone Number Validation"
+          frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+          referrerpolicy="strict-origin-when-cross-origin"
+          allowfullscreen
+        ></iframe
+        ><br /><br />
+        <div class="information" id="info">
+          <h3>How to Use the phone number validation tool</h3>
+          <p>
+            With our phone verification tool, you can validate phone numbers as
+            they are collected from different channels. In addition to
+            validating phone numbers, you can also identify whether the number
+            is a landline or mobile, to assist ensuring compliance with
+            regulators. Here’s how you can use our phone validator tool:
+          </p>
+          <ul>
+            <li>
+              <span>Step #1: &nbsp;</span> Enter the number you wish to validate
+              and select the country of provenance. Click on the “Validate
+              Number” button to instantly validate the phone number.
+            </li>
+            <li>
+              <span>Step #2: &nbsp;</span> The ‘Main Info’ section displays
+              information about the number’s country, type and the carrier. From
+              the ‘Format’ section, you can view E164, RFC3966, International
+              and National details
+            </li>
+            <li>
+              <span>Step #3: &nbsp;</span> If you want to validate another phone
+              number, simply click the “Reset” button or refresh the page. If
+              the phone number is valid, you will have the option to send a text
+              message to it. In order to do that though, you need a Textmagic
+              accoun
+            </li>
+            <br />
+          </ul>
+          <h3>Why you should use the phone validator</h3>
+          <p>
+            How valuable are accurate phone numbers for your business? If your
+            organization is looking to broaden its telecommunication strategy,
+            or you require phone numbers to interact with customers, then the
+            phone verification tool will ensure that the numbers you collect are
+            accurate before you pick up the phone or send a text message
+          </p>
+          <h3>Why we built this tool</h3>
+          <p>
+            The explosion in mobile usage has fundamentally changed the way
+            people interact with brands. We understand how important it is to
+            reach out to clients in a timely manner. For this purpose, we
+            created an easy-to-use phone verification tool that will ultimately
+            lead to increased customer satisfaction, better retention, improved
+            productivity and life-time value.
+          </p>
+          <h3>Benefits of using the phone validator</h3>
+          <p>
+            Our phone number verification tool extracts data from over 200 cable
+            and telecommunications providers. Here are the main benefits of
+            phone number verification:
+          </p>
+          <ul>
+            <li>Maximize revenue opportunities.</li>
+            <li>Improve customer experience.</li>
+            <li>Increase business performance.</li>
+            <li>Discover important information about the owner.</li>
+            <li>Identify the number type before sending a text message.</li>
+            <li>Cleanse phone numbers before they enter your database.</li>
+            <br />
+          </ul>
+          <h3 id="help">How does phone number validation work?</h3>
+          <p>
+            The phone validator doesn't only check the format of the number, it
+            also checks its availability to receive calls or texts. You don't
+            have to worry about the owner of the mobile device receiving any SMS
+            or notification – they will not be aware of your phone verification
+            attempts.
+          </p>
+        </div>
+      </div>
+    </main>
+    <footer>
+      <h3 id="contact">Contact With Me</h3>
+      <div>
+        <a href="https://github.com/shogof/">Github &nbsp;| </a>
+        <a href="https://www.linkedin.com/in/shegofa-developer-aa362030b"
+          >Linkedin &nbsp; |
+        </a>
+        <a href="tel:+93731905950">WhatsApp &nbsp;| </a>
+        <a
+          href="https://www.facebook.com/profile.php?id=61559852199772&mibextid=ZbWKwL"
+          >FaceBook</a
+        >
+      </div>
+    </footer>
+    <script src="script2.js"></script>
+  </body>
+</html>
