@@ -1,16 +1,24 @@
-# phone-number-validattion 🚀
+# Cash Register System 🚀
 
 ## Project Description 📝
 
-> 📞 Welcome to our Global Phone Number Validator project! Crafted with meticulous attention to detail and geographical finesse, it's a journey through diverse phone numbering systems and coding excellence. Explore the intricacies of phone number validation across Iran, Afghanistan, and the USA, where every regex pattern and validation rule blends seamlessly with modern JavaScript techniques. Dive into the reliability of our validation methods and savor the simplicity of integrating them into your applications. Your engagement not only enhances your coding prowess but also enriches our exploration of global communication standards! Let's validate these phone numbers together and ensure seamless digital connections worldwide! 🌍📞
+> ### 🛒 **Simple Cash Register System**
 
-## [Live](https://shogof.github.io/phone-number-validattion/)
+Create an easy-to-use cash register with basic features for managing sales. Perfect for a school project, this system handles transactions, tracks totals, and provides a user-friendly experience.
+
+**Features:**
+
+- **💵 Handles Transactions:** Processes sales and gives change.
+- **🔄 Simple to Use:** Easy setup and intuitive interface.
+- **💻 Basic Functionality:** Perfect for a project or classroom demo.
+
+Build a functional and straightforward cash register system to practice your coding skills and explore basic software development concepts!
+
+## [Live](https://shogof.github.io/build-a-cash-register/)
 
 ## Demo 📸
 
-![screenshot](https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExYjE3N3V5emJpMDJxbmNwa3E2czB3eXR0ZWJnYmphY2o5enhucTRmcyZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/1z6M5eo7QFGdzgnsew/giphy.gif)
-
-![screenshot](images/f.gif)
+![Projecct-Gif](https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExZDZrdnpnbmdqZWpkcml4dXgwcnU1MGgybW5pMWNuNmxhdWUxcHN0OCZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/Lhto0JTQnMUjbWj7Us/giphy.gif)
 
 ## Technologies Used 🛠️
 
@@ -24,7 +32,7 @@ To install and set up this project, simply follow these steps:
 
 1. **Clone the repository:**
    ```bash
-   git clone git@github.com:shogof/phone-n-validation.git
+   git clone git@github.com:shogof/cash-register.git
    ```
 
 🎉 Once you've cloned the repository, you're all set to start exploring and using the project! If you encounter any issues or have questions, feel free to reach out for assistance. 🚀
@@ -38,7 +46,7 @@ To use this project, follow these steps:
 
 2. **Navigate to project directory:**
    ```bash
-   cd phone-n-validation
+   cd cash-register
    ```
 3. **Open the HTML file:**
    Open the index.html file in your preferred web browser. You can do this by double-clicking the file or using a command-line tool like open (for macOS) or start (for Windows).
@@ -73,7 +81,7 @@ If you'd like to contribute to this project, follow these steps:
     Clone the repository to your local machine.
 
     ```bash
-    git clone https://github.com/Shegofa/phone-n-validation.git
+    git clone https://github.com/Shegofa/cash-register.git
     ```
 
 3.  **Create a new branch:**
