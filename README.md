@@ -1,20 +1,14 @@
-# Cash Register System 🚀
+# Phone number validation 🚀
 
 ## Project Description 📝
 
-> ### 🛒 **Simple Cash Register System**
+> ### 🛒 **Phone number validation**
 
-Create an easy-to-use cash register with basic features for managing sales. Perfect for a school project, this system handles transactions, tracks totals, and provides a user-friendly experience.
-
-**Features:**
-
-- **💵 Handles Transactions:** Processes sales and gives change.
-- **🔄 Simple to Use:** Easy setup and intuitive interface.
-- **💻 Basic Functionality:** Perfect for a project or classroom demo.
+ Welcome to our Global Phone Number Validator project! Dive into meticulous validation across Iran, Afghanistan, and the USA. Our regex patterns and modern JavaScript techniques ensure robust validation. Enhance your applications with reliable phone number validation, integrating seamlessly and enriching global communication standards.
 
 Build a functional and straightforward cash register system to practice your coding skills and explore basic software development concepts!
 
-## [Live](https://shogof.github.io/build-a-cash-register/)
+## [Live](https://shogof.github.io/build-a-phone-number-validation/)
 
 ## Demo 📸
 
@@ -32,7 +26,7 @@ To install and set up this project, simply follow these steps:
 
 1. **Clone the repository:**
    ```bash
-   git clone git@github.com:shogof/cash-register.git
+   git clone git@github.com:shogof/phone-number-validation.git
    ```
 
 🎉 Once you've cloned the repository, you're all set to start exploring and using the project! If you encounter any issues or have questions, feel free to reach out for assistance. 🚀
@@ -46,7 +40,7 @@ To use this project, follow these steps:
 
 2. **Navigate to project directory:**
    ```bash
-   cd cash-register
+   cd phone-number-validation
    ```
 3. **Open the HTML file:**
    Open the index.html file in your preferred web browser. You can do this by double-clicking the file or using a command-line tool like open (for macOS) or start (for Windows).
@@ -81,7 +75,7 @@ If you'd like to contribute to this project, follow these steps:
     Clone the repository to your local machine.
 
     ```bash
-    git clone https://github.com/Shegofa/cash-register.git
+    git clone https://github.com/Shegofa/phone-number-validation.git
     ```
 
 3.  **Create a new branch:**
