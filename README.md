@@ -8,11 +8,7 @@
 
 Build a functional and straightforward cash register system to practice your coding skills and explore basic software development concepts!
 
-## [Live](https://shogof.github.io/build-a-phone-number-validation/)
-
-## Demo 📸
-
-![Projecct-Gif](https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExZDZrdnpnbmdqZWpkcml4dXgwcnU1MGgybW5pMWNuNmxhdWUxcHN0OCZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/Lhto0JTQnMUjbWj7Us/giphy.gif)
+## [Live](https://shogof.github.io/build-a-phone-number-validation/](https://shogof.github.io/phone-number-validattion/))
 
 ## Technologies Used 🛠️
 
